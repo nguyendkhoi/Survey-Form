@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Khảo sát</title>
+  </head>
+  <body>
+    <h1 id="title">Khảo sát chuyến đi du lịch Hạ Long</h1>
+    <p id="description">Cảm ơn vì đã dành thời gian giúp cuộc đi chơi vui hơn</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Họ và tên</label>
+          <input id="name" type="text" placeholder="Nhập họ và tên" required>
+        <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" placeholder="Nhập email" required>
+        <label id="number-label" for="number">Tuổi (tùy)</label>
+        <input id="number" type="number" placeholder="Nhập tuổi" min="6" max="120">
+        <label>Bạn đang làm gì?</label>
+          <select id="dropdown">
+              <option disabled>Bạn đang làm gì?</option>
+              <option>Học sinh</option>
+              <option>Đi làm thêm</option>
+              <option>Đi làm chính</option>
+              <option>Không muốn nói</option>
+              <option>Khác</option>
+          </select>
+        <label>Bạn thấy chuyến đi chơi này vui không?</label>
+          <label for="chac-chan" class="select">
+            <input id="chac-chan" type="radio" name="answer" class="inline" value="chac-chan"> Chắc chắc  
+          </label>
+          <label for="vui" class="select"> 
+            <input id="vui" type="radio" name="answer" class="inline" value="vui"> Vui
+          </label>
+          <label for="k-vui" class="select">
+            <input id="k-vui" type="radio" name="answer" class="inline" value="khong-vui"> Không vui
+          </label>
+        <label>Bạn muốn đi đâu tiếp theo (chọn điểm đến)</label>
+          <label for="hp" class="select">
+            <input id="hp" type="checkbox" value="hp" class="inline"> Hải Phòng
+          </label>
+          <label for="dl" class="select">
+            <input id="dl" type="checkbox" value="dl" class="inline"> Đà Lạt
+          </label>
+          <label for="dn" class="select">
+            <input id="dn" type="checkbox" value="dn" class="inline"> Đà Nẵng
+          </label>
+          <label for="h" class="select">
+            <input id="h" type="checkbox" value="h" class="inline"> Huế
+          </label>
+          <label for="ct" class="select">
+            <input id="ct" type="checkbox" value="ct" class="inline"> Cần Thơ
+          </label>
+          <label for="hb" class="select">
+            <input id="hb" type="checkbox" value="hb" class="inline"> Hòa Bình
+          </label>
+        <label for="idea">Bạn có ý kiến gì không?</label>
+          <textarea id="idea" placeholder="Cho ý kiến bạn vào đây..."></textarea>
+        <input id="submit" type="submit">
+      </fieldset> 
+    </form>
+  </body>
+</html>
